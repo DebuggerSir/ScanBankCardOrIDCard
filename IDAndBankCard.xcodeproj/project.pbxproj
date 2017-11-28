@@ -37,6 +37,8 @@
 		94AB76CD1E8A4CE2002F1D78 /* IDOverLayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94AB76CC1E8A4CE2002F1D78 /* IDOverLayerView.m */; };
 		94AB76D01E8A5248002F1D78 /* XLListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94AB76CF1E8A5248002F1D78 /* XLListViewController.m */; };
 		94AB76D31E8A52FA002F1D78 /* XLTableDelegateObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 94AB76D21E8A52FA002F1D78 /* XLTableDelegateObj.m */; };
+		B7FD7D311FCD455E0097AD1D /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7FD7D2F1FCD455E0097AD1D /* TestViewController.m */; };
+		B7FD7D321FCD455E0097AD1D /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7FD7D301FCD455E0097AD1D /* TestViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +121,9 @@
 		94AB76CF1E8A5248002F1D78 /* XLListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLListViewController.m; sourceTree = "<group>"; };
 		94AB76D11E8A52FA002F1D78 /* XLTableDelegateObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLTableDelegateObj.h; sourceTree = "<group>"; };
 		94AB76D21E8A52FA002F1D78 /* XLTableDelegateObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLTableDelegateObj.m; sourceTree = "<group>"; };
+		B7FD7D2E1FCD455E0097AD1D /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		B7FD7D2F1FCD455E0097AD1D /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		B7FD7D301FCD455E0097AD1D /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
 		EDCE4C4CB723B4AB02952493 /* Pods_IDAndBankCard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IDAndBankCard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -195,6 +200,9 @@
 				94AB68171E8A2F4C002F1D78 /* AppDelegate.m */,
 				94AB68191E8A2F4C002F1D78 /* ViewController.h */,
 				94AB681A1E8A2F4C002F1D78 /* ViewController.m */,
+				B7FD7D2E1FCD455E0097AD1D /* TestViewController.h */,
+				B7FD7D2F1FCD455E0097AD1D /* TestViewController.m */,
+				B7FD7D301FCD455E0097AD1D /* TestViewController.xib */,
 				94AB681C1E8A2F4C002F1D78 /* Main.storyboard */,
 				94AB681F1E8A2F4C002F1D78 /* Assets.xcassets */,
 				94AB68211E8A2F4C002F1D78 /* LaunchScreen.storyboard */,
@@ -413,7 +421,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = XL;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = mxl;
 				TargetAttributes = {
 					94AB680F1E8A2F4C002F1D78 = {
@@ -459,6 +467,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94AB76B81E8A41CC002F1D78 /* zocr0.lib in Resources */,
+				B7FD7D321FCD455E0097AD1D /* TestViewController.xib in Resources */,
 				94AB68231E8A2F4C002F1D78 /* LaunchScreen.storyboard in Resources */,
 				94AB68201E8A2F4C002F1D78 /* Assets.xcassets in Resources */,
 				94AB681E1E8A2F4C002F1D78 /* Main.storyboard in Resources */,
@@ -552,6 +561,7 @@
 				94AB76A51E8A3BE5002F1D78 /* XLScanManagerInitialize.m in Sources */,
 				94AB69191E8A2FEE002F1D78 /* XLIDScanViewController.m in Sources */,
 				94AB76AB1E8A413F002F1D78 /* RectManager.m in Sources */,
+				B7FD7D311FCD455E0097AD1D /* TestViewController.m in Sources */,
 				94AB76A21E8A37F1002F1D78 /* XLScanBaseManager.m in Sources */,
 				94AB769B1E8A33C1002F1D78 /* XLScanBaseViewController.m in Sources */,
 				94AB68151E8A2F4C002F1D78 /* main.m in Sources */,
@@ -618,7 +628,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -626,7 +638,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -665,7 +681,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -673,7 +691,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

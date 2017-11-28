@@ -98,7 +98,9 @@
             
             dispatch_async(dispatch_get_main_queue(), ^{
                 AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
-                [self.bankScanSuccess sendNext:model];
+                if (model.bankImage) {
+                    [self.bankScanSuccess sendNext:model];
+                }
             });
         }
     }

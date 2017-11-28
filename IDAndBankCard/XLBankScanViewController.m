@@ -8,6 +8,7 @@
 
 #import "XLBankScanViewController.h"
 #import "OverlayView.h"
+#import "TestViewController.h"
 
 @interface XLBankScanViewController ()
 
@@ -53,7 +54,15 @@
     }
     
     [self.cameraManager.bankScanSuccess subscribeNext:^(id x) {
-        [self showResult:x];
+//        [self showResult:x];
+        [self.cameraManager stopSession];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            TestViewController *vc = [[TestViewController alloc] init];
+            XLScanResultModel *model = (XLScanResultModel *)x;
+            vc.image = model.bankImage;
+            [self.navigationController pushViewController:vc animated:YES];
+            
+        });
     }];
     [self.cameraManager.scanError subscribeNext:^(id x) {
         
